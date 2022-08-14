@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>Gregs Library</h1>
+<p><a href="/homepage">Click here for the Homepage</a></p>
+    <section>
+    <div class="selection">
+        <a href="/expanse"><h3>{{ list_of_books[0].title }}</h3></a>
+        <h4>{{ list_of_books[0].author }}</h4>
+        <h4>{{ list_of_books[0].genre }}</h4>
+
+    </div>
+    <div class="selection">
+        <a href="/brief_history"><h3>{{ list_of_books[1].title }}</h3></a>
+        <h4>{{ list_of_books[1].author }}</h4>
+        <h4>{{ list_of_books[1].genre }}</h4>
+    </div>
+    <div class="selection">
+        <a href="/game_thrones"><h3>{{ list_of_books[2].title }}</h3></a>
+        <h4>{{ list_of_books[2].author }}</h4>
+        <h4>{{ list_of_books[2].genre }}</h4>
+    </div>
+    <div class="selection">
+        <a href="/space_odyssey"><h3>{{ list_of_books[3].title }}</h3></a>
+        <h4>{{ list_of_books[3].author }}</h4>
+        <h4>{{ list_of_books[3].genre }}</h4>
+    </div>
+    <div class="selection">
+        <a href="the_shining"><h3>{{ list_of_books[4].title }}</h3></a>
+        <h4>{{ list_of_books[4].author }}</h4>
+        <h4>{{ list_of_books[4].genre }}</h4>
+    </div>
+    </section>
+
+    {% endblock %}
+
+
+
+
+

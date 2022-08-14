@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<article>  
+    <div class="individual"> 
+        <h1>{{ list_of_books[3].title}} </h1>
+        <h2>{{ list_of_books[3].author}} </h2>
+        <h2> {{list_of_books[3].genre}} </h2>
+        <a href="/library">Back To Library</a><br>
+        <a href="/homepage">Back To Homepage</a>
+    </div>
+</article> 
+
+{% endblock %}
